@@ -162,6 +162,7 @@ class AutoProspectiveInvestment:
             sleep(delay)
             touch(team)  # 确认
             # 选择取长补短
+            sleep(delay)
             touch(combination)  # 取长补短
             sleep(delay)
             touch(combination)  # 确认
@@ -396,8 +397,9 @@ class AutoProspectiveInvestment:
         sleep(1)
         if try_touch('前瞻性投资系统'):
             touch('投资入口')
-            touch((1400, 740), times=60)  # 确认投资
+            touch((1400, 740), times=80)  # 确认投资
 
 
 script = AutoProspectiveInvestment()
 script.run()
+
